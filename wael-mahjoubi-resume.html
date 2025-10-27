@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur</title>
+    <meta name="description" content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur. Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
+    <meta name="keywords" content="Wael Mahjoubi, Software Architect, Entrepreneur, Full-Stack Developer, Brandi Network, AI Innovation, E-commerce Platform, Microservices">
+    <meta name="author" content="Wael Mahjoubi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur">
+    <meta property="og:description" content="Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI">
+    <meta property="og:url" content="https://mahjoubiwael.brandi.network">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur">
+    <meta name="twitter:description" content="Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
+    <meta name="twitter:image" content="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --dark-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            --text-primary: #ffffff;
+            --text-secondary: #b8c5d1;
+            --text-muted: #8a9ba8;
+            --bg-primary: #0f1419;
+            --bg-secondary: #1a1f2e;
+            --bg-card: #242b3d;
+            --border-color: #2d3748;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background: var(--dark-gradient);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: white;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .profile-info h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .profile-info .title {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .contact-item i {
+            color: var(--accent-gradient);
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 40px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 2px;
+            background: var(--accent-gradient);
+            border-radius: 1px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .card-subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .card-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-3px);
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-gradient);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .project-tech {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .project-features {
+            margin-bottom: 20px;
+        }
+
+        .project-features h4 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .feature-item::before {
+            content: '✓';
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-gradient);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent-gradient);
+            border: 3px solid var(--bg-primary);
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-gradient);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            color: var(--text-secondary);
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                font-size: 60px;
+                margin: 0 auto;
+            }
+
+            .profile-info h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .header {
+                background: #f8f9fa;
+                color: black;
+            }
+
+            .card {
+                background: white;
+                border: 1px solid #ddd;
+                box-shadow: none;
+            }
+
+            .section-title {
+                color: black;
+            }
+
+            .profile-info h1 {
+                color: black;
+            }
+        }
+
+        /* Performance optimizations */
+        .profile-image img {
+            will-change: transform;
+        }
+
+        .card, .skill-category, .project-card {
+            will-change: transform;
+        }
+
+        /* Loading states */
+        .profile-image img {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-image img.loaded {
+            opacity: 1;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card, .skill-category, .project-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI" alt="Wael Mahjoubi" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                </div>
+                <div class="profile-info">
+                    <h1>Wael Mahjoubi</h1>
+                    <div class="title">Full-Stack Software Architect & Entrepreneur</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mahjoubiwael@brandi.network</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/mahjoubiwael</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tunisia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span>mahjoubiwael@brandi.network</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Professional Summary -->
+            <section class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="card">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                        <strong style="color: var(--text-primary);">Full-Stack Software Architect & Entrepreneur</strong> with 3+ years of experience in system architecture and platform development. Founder and CEO of Brandi Network INC, a Delaware C-Corporation developing a revolutionary social e-commerce platform with breakthrough AI innovation. Expert in building scalable, multi-tenant business management platforms with modern web technologies, microservices architecture, and advanced AI integration.
+                    </p>
+                    <br>
+                    <p style="color: var(--text-secondary);">
+                        <strong style="color: var(--text-primary);">Core Expertise:</strong> Full-stack development, microservices architecture, AI/ML integration, e-commerce platforms, multi-tenant SaaS solutions, real-time systems, and business process automation.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Key Statistics -->
+            <section class="section">
+                <h2 class="section-title">Key Achievements</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Microservices Built</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1,238+</div>
+                        <div class="stat-label">Files Developed</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React 18.3.0</span>
+                            <span class="skill-tag">Next.js 15.0.0</span>
+                            <span class="skill-tag">JavaScript/TypeScript</span>
+                            <span class="skill-tag">Material-UI v7.0.0</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Go 1.22</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Gorilla Mux</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases & Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB 6.0+</span>
+                            <span class="skill-tag">Redis 6.0+</span>
+                            <span class="skill-tag">Mongoose ODM</span>
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Specialized Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AI/ML</span>
+                            <span class="skill-tag">WebSocket</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">Stripe</span>
+                            <span class="skill-tag">Postmark</span>
+                            <span class="skill-tag">JWT Auth</span>
+                            <span class="skill-tag">Jest Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Architecture & Design</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">Clean Architecture</span>
+                            <span class="skill-tag">Event-Driven</span>
+                            <span class="skill-tag">Multi-tenant</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Founder & CEO</div>
+                            <div class="card-subtitle">Brandi Network INC</div>
+                        </div>
+                        <div class="card-date">2023 - Present</div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        <strong style="color: var(--text-primary);">Delaware C-Corporation | Social E-Commerce Platform with AI Innovation</strong>
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Leading the development of a revolutionary social e-commerce platform that transforms existing technologies into breakthrough AI innovations, targeting 33.2M small businesses in the US market.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Achievements:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">Architected Complete Platform (85% complete)</div>
+                            <div class="feature-item">Developed 4 Core Microservices</div>
+                            <div class="feature-item">Designed 3-Phase AI Evolution Roadmap</div>
+                            <div class="feature-item">Created Comprehensive Business Strategy</div>
+                            <div class="feature-item">Targeting $5.4B US E-commerce Market</div>
+                            <div class="feature-item">Pre-seed Funding Strategy ($200K-500K)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Bachelor of Science in Software Engineering</div>
+                            <div class="card-subtitle">Gafsa University</div>
+                        </div>
+                        <div class="card-date">Aug 2017 - Mar 2022</div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        <strong style="color: var(--text-primary);">Computer Software Engineering</strong>
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        As a pioneering programmer and software engineer with a courageous thrust for innovation, I carved my own unique path during my university journey. Recognizing the importance of practical, industry-relevant skills, I proactively pursued subjects that would truly benefit my career development, going beyond the traditional curriculum.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Achievements & Self-Directed Learning:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">Self-taught Full-Stack Software Engineering beyond curriculum</div>
+                            <div class="feature-item">Became a Pioneer GitHub Professional using GitHub Student Pack</div>
+                            <div class="feature-item">Developed innovative projects and contributed to open-source</div>
+                            <div class="feature-item">Mastered modern web technologies and frameworks independently</div>
+                            <div class="feature-item">Built comprehensive portfolio of real-world applications</div>
+                            <div class="feature-item">Established strong foundation in software architecture and design patterns</div>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-top: 20px; font-style: italic;">
+                        This self-directed approach to learning and innovation laid the foundation for my entrepreneurial journey and technical expertise in building scalable, modern software solutions.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Major Projects -->
+            <section class="section">
+                <h2 class="section-title">Major Projects</h2>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <div class="project-title">Brandi Network Platform</div>
+                            <div class="project-tech">Lead Architect & Developer</div>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <strong>Technologies:</strong> Next.js 15.0.0, React 18.3.0, Material-UI v7.0.0, MongoDB, Redis, AWS S3, Stripe
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Comprehensive multi-tenant business management platform providing workspace management, user authentication, product catalog, subscription billing, and file management capabilities.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features Implemented:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">Complete Authentication System with JWT and 2FA</div>
+                            <div class="feature-item">Multi-tenant Workspace Management</div>
+                            <div class="feature-item">Product Catalog with Variants & Pricing</div>
+                            <div class="feature-item">Order & Invoice Management</div>
+                            <div class="feature-item">Subscription Billing with Recurring Payments</div>
+                            <div class="feature-item">File Management with AWS S3</div>
+                            <div class="feature-item">Internationalization (EN/FR/AR)</div>
+                            <div class="feature-item">Modern UI with Material-UI</div>
+                        </div>
+                    </div>
+                    <div class="project-features">
+                        <h4>Technical Highlights:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">1,238+ files with 666 JSX components</div>
+                            <div class="feature-item">42 API endpoints covering all operations</div>
+                            <div class="feature-item">Comprehensive testing with Jest</div>
+                            <div class="feature-item">Security middleware with rate limiting</div>
+                            <div class="feature-item">Real-time updates via WebSocket</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <div class="project-title">Brandi Email Service</div>
+                            <div class="project-tech">Lead Developer</div>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <strong>Technologies:</strong> Go 1.22, Kafka (Sarama), MongoDB, Postmark API, Template Engine
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Modern, scalable email service handling all platform notifications including authentication, workspace management, orders, invoices, and subscriptions.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">16 Token Types Supported</div>
+                            <div class="feature-item">Layered Architecture with Clean Separation</div>
+                            <div class="feature-item">Kafka Integration with Consumer Management</div>
+                            <div class="feature-item">Template Management with Hot Reloading</div>
+                            <div class="feature-item">Workspace Branding Automatic Injection</div>
+                            <div class="feature-item">Graceful Shutdown with Timeout Handling</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <div class="project-title">Brandi Subscription Service</div>
+                            <div class="project-tech">Lead Developer</div>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <strong>Technologies:</strong> Go 1.22, Kafka, MongoDB, Cron Jobs, Business Logic Engine
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Advanced subscription and billing workflow management system handling complex subscription lifecycles, invoice generation, and payment processing.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">Complex State Management (DRAFT → SCHEDULED → PENDING → ACTIVE → COMPLETED/CANCELED)</div>
+                            <div class="feature-item">Automated Invoice Generation</div>
+                            <div class="feature-item">Cron Job System for Billing Cycles</div>
+                            <div class="feature-item">Kafka Consumers for Real-time Updates</div>
+                            <div class="feature-item">Business Logic Validation</div>
+                            <div class="feature-item">Auto-renewal Logic with Configurable Policies</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <div class="project-title">Brandi Transaction Service</div>
+                            <div class="project-tech">Lead Developer</div>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <strong>Technologies:</strong> Go 1.22, Kafka (Sarama), MongoDB, Konnect API, Gorilla Mux, Prometheus
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Financial transaction management microservice handling invoice payments, payment verification, and webhook processing.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">InitTransaction Flow for Payment Creation</div>
+                            <div class="feature-item">VerifyTransaction Flow for Status Verification</div>
+                            <div class="feature-item">Webhook Integration with Konnect API</div>
+                            <div class="feature-item">Graceful Shutdown with Resource Cleanup</div>
+                            <div class="feature-item">Prometheus Metrics for Monitoring</div>
+                            <div class="feature-item">MongoDB Change Streams Integration</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Accomplishments -->
+            <section class="section">
+                <h2 class="section-title">Business Accomplishments</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Strategic Business Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Market Analysis ($5.4B US E-commerce)</span>
+                            <span class="skill-tag">SaaS Pricing Model (75-85% Margins)</span>
+                            <span class="skill-tag">Financial Projections (36-month)</span>
+                            <span class="skill-tag">Funding Strategy (Pre-seed to Series B+)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Innovation & Research</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AI Breakthrough Research</span>
+                            <span class="skill-tag">Intellectual Property Strategy</span>
+                            <span class="skill-tag">Academic Partnerships</span>
+                            <span class="skill-tag">3-Phase AI Development</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Product Strategy</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MVP Development (85% Complete)</span>
+                            <span class="skill-tag">Feature Prioritization</span>
+                            <span class="skill-tag">User Experience Design</span>
+                            <span class="skill-tag">Scalability Planning (100K+ Merchants)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Information -->
+            <section class="section">
+                <h2 class="section-title">Additional Information</h2>
+                <div class="card">
+                    <div class="project-features">
+                        <h4>Languages:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">English: Fluent (Primary business language)</div>
+                            <div class="feature-item">French: Fluent (Secondary language)</div>
+                            <div class="feature-item">Arabic: Native (Tunisian Arabic)</div>
+                        </div>
+                    </div>
+                    <div class="project-features">
+                        <h4>Interests & Philosophy:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">"Commerce Considérable": Philosophy integrating social impact and transparency</div>
+                            <div class="feature-item">AI Innovation: Passionate about breakthrough artificial intelligence research</div>
+                            <div class="feature-item">Social Commerce: Focus on community-driven e-commerce solutions</div>
+                            <div class="feature-item">Sustainable Technology: Commitment to eco-responsible development</div>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-top: 20px; font-style: italic;">
+                        Believes in building technology that creates meaningful impact, combining technical excellence with social responsibility. Committed to transparency, ethical business practices, and creating value for all stakeholders in the ecosystem.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>References:</strong> Available upon request</p>
+                <p>Comprehensive project documentation, code repositories, and business materials available for review</p>
+                <div class="social-links">
+                    <a href="mailto:mahjoubiwael@brandi.network" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mahjoubiwael" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:mahjoubiwael@brandi.network" class="social-link">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Performance and Analytics
+        document.addEventListener('DOMContentLoaded', function() {
+            // Image loading optimization
+            const profileImg = document.querySelector('.profile-image img');
+            if (profileImg) {
+                profileImg.addEventListener('load', function() {
+                    this.classList.add('loaded');
+                });
+                
+                // Fallback if image fails to load
+                profileImg.addEventListener('error', function() {
+                    this.style.display = 'none';
+                    const fallback = document.createElement('i');
+                    fallback.className = 'fas fa-user';
+                    fallback.style.fontSize = '80px';
+                    fallback.style.color = 'white';
+                    this.parentNode.appendChild(fallback);
+                });
+            }
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all cards and sections
+            document.querySelectorAll('.card, .skill-category, .project-card, .stat-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Enhanced hover effects
+            document.querySelectorAll('.skill-tag').forEach(tag => {
+                tag.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                tag.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+
+            // Smooth scrolling for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Performance monitoring
+            if ('performance' in window) {
+                window.addEventListener('load', function() {
+                    const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+                    console.log('Page load time:', loadTime + 'ms');
+                });
+            }
+
+            // Print functionality
+            window.addEventListener('beforeprint', function() {
+                document.body.classList.add('printing');
+            });
+            
+            window.addEventListener('afterprint', function() {
+                document.body.classList.remove('printing');
+            });
+        });
+
+        // Service Worker registration for PWA capabilities
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Analytics (replace with your preferred analytics) -->
+    <script>
+        // Google Analytics 4 (replace GA_MEASUREMENT_ID with your actual ID)
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>
