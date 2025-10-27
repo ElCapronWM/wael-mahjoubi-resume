@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur</title>
-    <meta name="description" content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur. Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
-    <meta name="keywords" content="Wael Mahjoubi, Software Architect, Entrepreneur, Full-Stack Developer, Brandi Network, AI Innovation, E-commerce Platform, Microservices">
+    <meta name="description"
+        content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur. Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
+    <meta name="keywords"
+        content="Wael Mahjoubi, Software Architect, Entrepreneur, Full-Stack Developer, Brandi Network, AI Innovation, E-commerce Platform, Microservices">
     <meta name="author" content="Wael Mahjoubi">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur">
-    <meta property="og:description" content="Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
-    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI">
+    <meta property="og:description"
+        content="Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
+    <meta property="og:image"
+        content="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI">
     <meta property="og:url" content="https://mahjoubiwael.brandi.network">
     <meta property="og:type" content="website">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Wael Mahjoubi - Full-Stack Software Architect & Entrepreneur">
-    <meta name="twitter:description" content="Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
-    <meta name="twitter:image" content="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI">
-    
+    <meta name="twitter:description"
+        content="Founder & CEO of Brandi Network INC. Expert in building scalable, multi-tenant business management platforms with modern web technologies and AI innovation.">
+    <meta name="twitter:image"
+        content="https://media.licdn.com/dms/image/v2/D4E22AQGkhno5c1FN4g/feedshare-shrink_2048_1536/B4EZmwyTBZKkAw-/0/1759607618392?e=1762992000&v=beta&t=MEnhCfiRC5vj0FU3eDwOSpvr9a0DyN8pst3bP4AoMmI">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -125,8 +133,13 @@
         }
 
         @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .profile-info h1 {
@@ -178,7 +191,7 @@
             color: #ffffff;
             border-bottom-color: rgba(255, 255, 255, 0.6);
         }
-        
+
         /* Main Content */
         .main-content {
             padding: 60px 0;
@@ -575,7 +588,9 @@
             will-change: transform;
         }
 
-        .card, .skill-category, .project-card {
+        .card,
+        .skill-category,
+        .project-card {
             will-change: transform;
         }
 
@@ -595,7 +610,7 @@
             display: none;
         }
 
-        .profile-image img.error + .fallback-icon {
+        .profile-image img.error+.fallback-icon {
             display: block;
         }
 
@@ -605,21 +620,33 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-        .card, .skill-category, .project-card {
+        .card,
+        .skill-category,
+        .project-card {
             animation: fadeInUp 0.6s ease-out;
         }
 
-        .card:nth-child(2) { animation-delay: 0.1s; }
-        .card:nth-child(3) { animation-delay: 0.2s; }
-        .card:nth-child(4) { animation-delay: 0.3s; }
+        .card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 0.3s;
+        }
     </style>
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="header">
@@ -635,11 +662,13 @@
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/mahjoubiwael" target="_blank" rel="noopener noreferrer">linkedin.com/in/mahjoubiwael</a>
+                            <a href="https://linkedin.com/in/mahjoubiwael" target="_blank"
+                                rel="noopener noreferrer">linkedin.com/in/mahjoubiwael</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <a href="https://www.google.com/maps/place/Tunisia" target="_blank" rel="noopener noreferrer">Tunisia</a>
+                            <a href="https://www.google.com/maps/place/Tunisia" target="_blank"
+                                rel="noopener noreferrer">Tunisia</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-globe"></i>
@@ -659,14 +688,22 @@
                 <h2 class="section-title">Professional Summary</h2>
                 <div class="card">
                     <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-                        <strong style="color: var(--text-primary);">Full-Stack Software Architect & Entrepreneur</strong> with 3+ years of experience in system architecture and platform development. Founder and CEO of Brandi Network INC, a Delaware C-Corporation developing a revolutionary social e-commerce platform with breakthrough AI innovation. Expert in building scalable, multi-tenant business management platforms with modern web technologies, microservices architecture, and advanced AI integration.
+                        <strong style="color: var(--text-primary);">Full-Stack Software Architect &
+                            Entrepreneur</strong> with 3+ years of experience in system architecture and platform
+                        development. Founder and Project Lead of Brandi Network, a pre-incorporation initiative building
+                        a revolutionary social e-commerce platform with breakthrough AI innovation. Expert in designing
+                        scalable, multi-tenant business management platforms using modern web technologies,
+                        microservices architecture, and advanced AI integration.
                     </p>
                     <br>
                     <p style="color: var(--text-secondary);">
-                        <strong style="color: var(--text-primary);">Core Expertise:</strong> Full-stack development, microservices architecture, AI/ML integration, e-commerce platforms, multi-tenant SaaS solutions, real-time systems, and business process automation.
+                        <strong style="color: var(--text-primary);">Core Expertise:</strong> Full-stack development,
+                        microservices architecture, AI/ML integration, e-commerce platforms, multi-tenant SaaS
+                        solutions, real-time systems, and business process automation.
                     </p>
                 </div>
             </section>
+
 
             <!-- Key Statistics -->
             <section class="section">
@@ -748,30 +785,35 @@
                 <div class="card">
                     <div class="card-header">
                         <div>
-                            <div class="card-title">Founder & CEO</div>
-                            <div class="card-subtitle">Brandi Network INC</div>
+                            <div class="card-title">Founder & Project Lead</div>
+                            <div class="card-subtitle">Brandi Network (Pre-Incorporation Stage)</div>
                         </div>
                         <div class="card-date">2023 - Present</div>
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        <strong style="color: var(--text-primary);">Delaware C-Corporation | Social E-Commerce Platform with AI Innovation</strong>
+                        <strong style="color: var(--text-primary);">Social E-Commerce Platform with AI Innovation |
+                            Pre-Incorporation Initiative</strong>
                     </p>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        Leading the development of a revolutionary social e-commerce platform that transforms existing technologies into breakthrough AI innovations, targeting 33.2M small businesses in the US market.
+                        Leading the creation of a revolutionary social e-commerce platform that transforms existing
+                        technologies into breakthrough AI innovations. Currently in the pre-incorporation phase and
+                        seeking a co-founder/partner to establish the company and expand into the 33.2M small business
+                        US market.
                     </p>
                     <div class="project-features">
                         <h4>Key Achievements:</h4>
                         <div class="feature-list">
-                            <div class="feature-item">Architected Complete Platform (85% complete)</div>
+                            <div class="feature-item">Architected Complete Platform</div>
                             <div class="feature-item">Developed 4 Core Microservices</div>
                             <div class="feature-item">Designed 3-Phase AI Evolution Roadmap</div>
                             <div class="feature-item">Created Comprehensive Business Strategy</div>
                             <div class="feature-item">Targeting $5.4B US E-commerce Market</div>
-                            <div class="feature-item">Pre-seed Funding Strategy ($200K-500K)</div>
+                            <div class="feature-item">Pre-seed Funding Strategy ($200K–500K)</div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             <!-- Education -->
             <section class="section">
@@ -788,21 +830,29 @@
                         <strong style="color: var(--text-primary);">Computer Software Engineering</strong>
                     </p>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        As a pioneering programmer and software engineer with a courageous thrust for innovation, I carved my own unique path during my university journey. Recognizing the importance of practical, industry-relevant skills, I proactively pursued subjects that would truly benefit my career development, going beyond the traditional curriculum.
+                        As a pioneering programmer and software engineer with a courageous thrust for innovation, I
+                        carved my own unique path during my university journey. Recognizing the importance of practical,
+                        industry-relevant skills, I proactively pursued subjects that would truly benefit my career
+                        development, going beyond the traditional curriculum.
                     </p>
                     <div class="project-features">
                         <h4>Key Achievements & Self-Directed Learning:</h4>
                         <div class="feature-list">
-                            <div class="feature-item">Self-taught Full-Stack Software Engineering beyond curriculum</div>
-                            <div class="feature-item">Became a Pioneer GitHub Professional using GitHub Student Pack</div>
+                            <div class="feature-item">Self-taught Full-Stack Software Engineering beyond curriculum
+                            </div>
+                            <div class="feature-item">Became a Pioneer GitHub Professional using GitHub Student Pack
+                            </div>
                             <div class="feature-item">Developed innovative projects and contributed to open-source</div>
-                            <div class="feature-item">Mastered modern web technologies and frameworks independently</div>
+                            <div class="feature-item">Mastered modern web technologies and frameworks independently
+                            </div>
                             <div class="feature-item">Built comprehensive portfolio of real-world applications</div>
-                            <div class="feature-item">Established strong foundation in software architecture and design patterns</div>
+                            <div class="feature-item">Established strong foundation in software architecture and design
+                                patterns</div>
                         </div>
                     </div>
                     <p style="color: var(--text-secondary); margin-top: 20px; font-style: italic;">
-                        This self-directed approach to learning and innovation laid the foundation for my entrepreneurial journey and technical expertise in building scalable, modern software solutions.
+                        This self-directed approach to learning and innovation laid the foundation for my
+                        entrepreneurial journey and technical expertise in building scalable, modern software solutions.
                     </p>
                 </div>
             </section>
@@ -810,7 +860,7 @@
             <!-- Major Projects -->
             <section class="section">
                 <h2 class="section-title">Major Projects</h2>
-                
+
                 <div class="project-card">
                     <div class="project-header">
                         <div>
@@ -819,10 +869,12 @@
                         </div>
                     </div>
                     <div class="project-description">
-                        <strong>Technologies:</strong> Next.js 15.0.0, React 18.3.0, Material-UI v7.0.0, MongoDB, Redis, AWS S3, Stripe
+                        <strong>Technologies:</strong> Next.js 15.0.0, React 18.3.0, Material-UI v7.0.0, MongoDB, Redis,
+                        AWS S3, Stripe
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        Comprehensive multi-tenant business management platform providing workspace management, user authentication, product catalog, subscription billing, and file management capabilities.
+                        Comprehensive multi-tenant business management platform providing workspace management, user
+                        authentication, product catalog, subscription billing, and file management capabilities.
                     </p>
                     <div class="project-features">
                         <h4>Key Features Implemented:</h4>
@@ -860,7 +912,8 @@
                         <strong>Technologies:</strong> Go 1.22, Kafka (Sarama), MongoDB, Postmark API, Template Engine
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        Modern, scalable email service handling all platform notifications including authentication, workspace management, orders, invoices, and subscriptions.
+                        Modern, scalable email service handling all platform notifications including authentication,
+                        workspace management, orders, invoices, and subscriptions.
                     </p>
                     <div class="project-features">
                         <h4>Key Features:</h4>
@@ -886,12 +939,14 @@
                         <strong>Technologies:</strong> Go 1.22, Kafka, MongoDB, Cron Jobs, Business Logic Engine
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        Advanced subscription and billing workflow management system handling complex subscription lifecycles, invoice generation, and payment processing.
+                        Advanced subscription and billing workflow management system handling complex subscription
+                        lifecycles, invoice generation, and payment processing.
                     </p>
                     <div class="project-features">
                         <h4>Key Features:</h4>
                         <div class="feature-list">
-                            <div class="feature-item">Complex State Management (DRAFT → SCHEDULED → PENDING → ACTIVE → COMPLETED/CANCELED)</div>
+                            <div class="feature-item">Complex State Management (DRAFT → SCHEDULED → PENDING → ACTIVE →
+                                COMPLETED/CANCELED)</div>
                             <div class="feature-item">Automated Invoice Generation</div>
                             <div class="feature-item">Cron Job System for Billing Cycles</div>
                             <div class="feature-item">Kafka Consumers for Real-time Updates</div>
@@ -909,10 +964,12 @@
                         </div>
                     </div>
                     <div class="project-description">
-                        <strong>Technologies:</strong> Go 1.22, Kafka (Sarama), MongoDB, Konnect API, Gorilla Mux, Prometheus
+                        <strong>Technologies:</strong> Go 1.22, Kafka (Sarama), MongoDB, Konnect API, Gorilla Mux,
+                        Prometheus
                     </div>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                        Financial transaction management microservice handling invoice payments, payment verification, and webhook processing.
+                        Financial transaction management microservice handling invoice payments, payment verification,
+                        and webhook processing.
                     </p>
                     <div class="project-features">
                         <h4>Key Features:</h4>
@@ -953,7 +1010,7 @@
                     <div class="skill-category">
                         <h3>Product Strategy</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">MVP Development (85% Complete)</span>
+                            <span class="skill-tag">MVP Development</span>
                             <span class="skill-tag">Feature Prioritization</span>
                             <span class="skill-tag">User Experience Design</span>
                             <span class="skill-tag">Scalability Planning (100K+ Merchants)</span>
@@ -977,14 +1034,20 @@
                     <div class="project-features">
                         <h4>Interests & Philosophy:</h4>
                         <div class="feature-list">
-                            <div class="feature-item">"Commerce Considérable": Philosophy integrating social impact and transparency</div>
-                            <div class="feature-item">AI Innovation: Passionate about breakthrough artificial intelligence research</div>
-                            <div class="feature-item">Social Commerce: Focus on community-driven e-commerce solutions</div>
-                            <div class="feature-item">Sustainable Technology: Commitment to eco-responsible development</div>
+                            <div class="feature-item">"Commerce Considérable": Philosophy integrating social impact and
+                                transparency</div>
+                            <div class="feature-item">AI Innovation: Passionate about breakthrough artificial
+                                intelligence research</div>
+                            <div class="feature-item">Social Commerce: Focus on community-driven e-commerce solutions
+                            </div>
+                            <div class="feature-item">Sustainable Technology: Commitment to eco-responsible development
+                            </div>
                         </div>
                     </div>
                     <p style="color: var(--text-secondary); margin-top: 20px; font-style: italic;">
-                        Believes in building technology that creates meaningful impact, combining technical excellence with social responsibility. Committed to transparency, ethical business practices, and creating value for all stakeholders in the ecosystem.
+                        Believes in building technology that creates meaningful impact, combining technical excellence
+                        with social responsibility. Committed to transparency, ethical business practices, and creating
+                        value for all stakeholders in the ecosystem.
                     </p>
                 </div>
             </section>
@@ -996,7 +1059,8 @@
         <div class="container">
             <div class="footer-content">
                 <p><strong>References:</strong> Available upon request</p>
-                <p>Comprehensive project documentation, code repositories, and business materials available for review</p>
+                <p>Comprehensive project documentation, code repositories, and business materials available for review
+                </p>
                 <div class="social-links">
                     <a href="mailto:mahjoubiwael@brandi.network" class="social-link">
                         <i class="fas fa-envelope"></i>
@@ -1014,19 +1078,19 @@
 
     <script>
         // Performance and Analytics
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Image loading optimization
             const profileImg = document.querySelector('.profile-image img');
             const fallbackIcon = document.querySelector('.profile-image .fallback-icon');
-            
+
             if (profileImg) {
-                profileImg.addEventListener('load', function() {
+                profileImg.addEventListener('load', function () {
                     this.classList.add('loaded');
                     console.log('Profile image loaded successfully');
                 });
-                
+
                 // Fallback if image fails to load
-                profileImg.addEventListener('error', function() {
+                profileImg.addEventListener('error', function () {
                     console.log('Profile image failed to load, showing fallback');
                     this.style.display = 'none';
                     if (fallbackIcon) {
@@ -1052,7 +1116,7 @@
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function(entries) {
+            const observer = new IntersectionObserver(function (entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
@@ -1071,10 +1135,10 @@
 
             // Enhanced hover effects
             document.querySelectorAll('.skill-tag').forEach(tag => {
-                tag.addEventListener('mouseenter', function() {
+                tag.addEventListener('mouseenter', function () {
                     this.style.transform = 'scale(1.05)';
                 });
-                tag.addEventListener('mouseleave', function() {
+                tag.addEventListener('mouseleave', function () {
                     this.style.transform = 'scale(1)';
                 });
             });
@@ -1095,30 +1159,30 @@
 
             // Performance monitoring
             if ('performance' in window) {
-                window.addEventListener('load', function() {
+                window.addEventListener('load', function () {
                     const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
                     console.log('Page load time:', loadTime + 'ms');
                 });
             }
 
             // Print functionality
-            window.addEventListener('beforeprint', function() {
+            window.addEventListener('beforeprint', function () {
                 document.body.classList.add('printing');
             });
-            
-            window.addEventListener('afterprint', function() {
+
+            window.addEventListener('afterprint', function () {
                 document.body.classList.remove('printing');
             });
         });
 
         // Service Worker registration for PWA capabilities
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
+            window.addEventListener('load', function () {
                 navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
+                    .then(function (registration) {
                         console.log('SW registered: ', registration);
                     })
-                    .catch(function(registrationError) {
+                    .catch(function (registrationError) {
                         console.log('SW registration failed: ', registrationError);
                     });
             });
@@ -1134,4 +1198,5 @@
         // gtag('config', 'GA_MEASUREMENT_ID');
     </script>
 </body>
+
 </html>
