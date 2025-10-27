@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "name": "wael-mahjoubi-resume",
+  "name": "index",
   "builds": [
     {
-      "src": "wael-mahjoubi-resume.html",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "/wael-mahjoubi-resume.html"
+      "dest": "/index.html"
     },
     {
       "src": "/index.html",
-      "dest": "/wael-mahjoubi-resume.html"
+      "dest": "/index.html"
     }
   ],
   "headers": [
